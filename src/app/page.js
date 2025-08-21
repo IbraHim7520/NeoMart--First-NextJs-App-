@@ -1,9 +1,14 @@
 import Image from "next/image";
+import BannerSection from "./Components/BannerSection";
+import CategorySection from "./Components/CategorySection";
 
 export default function Home() {
   return (
-   <h1>
-    Hello Next JS.......
-   </h1>
+   
+   <div className="py-3">
+     <BannerSection></BannerSection>
+     <CategorySection></CategorySection>
+   </div>
+       
   );
 }

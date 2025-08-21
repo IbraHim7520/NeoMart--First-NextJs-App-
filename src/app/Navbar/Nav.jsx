@@ -17,16 +17,17 @@ const Nav = () => {
             </Link>
 
             <div className='hidden md:block'>
-                <ul className='flex justify-center items-center gap-3 text-sm  xl:text-lg font-semibold'>
+                <ul className='flex justify-center items-center gap-3   xl:text-lg font-semibold'>
                     <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Home</Link>
-                    <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Products</Link>
-                    <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Cart</Link>
+                    <Link className='hover:text-primary cursor-pointer. ' href={"/Products"}>Products</Link>
+                    <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
+                    <Link className='hover:text-primary cursor-pointer. ' href={"/Cart"}>Cart</Link>
                 </ul>
             </div>
 
             <div className='hidden md:flex justify-center items-center gap-3'>
-                <Link href={"/"} className='btn btn-sm px-5 btn-primary btn-outline'>Login <IoMdLogIn size={20} /></Link>
-                <Link href={"/"} className='btn btn-sm px-5 btn-warning hover:text-white btn-outline'>Signup <CgLogIn size={20} /></Link>
+                <Link href={"/Login"} className='btn btn-sm px-5 btn-primary btn-outline'>Login <IoMdLogIn size={20} /></Link>
+                <Link href={"/Signup"} className='btn btn-sm px-5 btn-warning hover:text-white btn-outline'>Signup <CgLogIn size={20} /></Link>
             </div>
 
             <div className="relative md:hidden">
@@ -43,10 +44,11 @@ const Nav = () => {
                 >
                     <ul className="flex font-semibold p-4 space-y-2 flex-col text-gray-700">
                         <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Home</Link>
-                        <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Products</Link>
-                        <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Cart</Link>
-                    <Link href={"/"} className='btn btn-sm px-5 btn-primary btn-outline'>Login <IoMdLogIn size={20} /></Link>
-                    <Link href={"/"} className='btn btn-sm px-5 btn-warning hover:text-white btn-outline'>Signup <CgLogIn size={20} /></Link>
+                        <Link className='hover:text-primary cursor-pointer. ' href={"/Products"}>Products</Link>
+                         <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
+                        <Link className='hover:text-primary cursor-pointer. ' href={"/Cart"}>Cart</Link>
+                    <Link href={"/Login"} className='btn btn-sm px-5 btn-primary btn-outline'>Login <IoMdLogIn size={20} /></Link>
+                    <Link href={"/Signup"} className='btn btn-sm px-5 btn-warning hover:text-white btn-outline'>Signup <CgLogIn size={20} /></Link>
                     </ul>
                 </div>
             </div>
