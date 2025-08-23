@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import React from 'react';
 import Slider1 from "../../../images/slider-1.png"
