@@ -5,7 +5,7 @@ import { LoginUser } from '../utils';
 import toast, { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
     const router = useRouter()
     const loginUser = () =>{
         e.preventDefault()
@@ -51,4 +51,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

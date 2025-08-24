@@ -5,7 +5,7 @@ import { useParams , useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 
-const page = () => {  
+const Page = () => {  
     const {id} = useParams()
     const route = useRouter()
     const isLoggein = true // Convert this with my auth status
@@ -123,4 +123,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

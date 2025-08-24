@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductForm from '../Components/ProductForm';
 
-const page = () => {
+const Page = () => {
     return (
         <div className='w-full  mx-auto px-3 md:px-6 lg:px-12 xl:px-16 '>
             <ProductForm />
@@ -9,4 +9,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;
