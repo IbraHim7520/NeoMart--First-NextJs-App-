@@ -8,17 +8,11 @@ import React, { useEffect, useState } from 'react';
 const Page = () => {  
     const {id} = useParams()
     const route = useRouter()
-    const isLoggein = true // Convert this with my auth status
     const [oneProduct , setOneProduct] = useState(null);
     useEffect( ()=>{
        const getOneData =async()=>{
-        if(!isLoggein){
-            route.push("/Login")
-            return
-        }else{
             const product = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/oneproduct/${id}`)
             setOneProduct(product?.data)
-        }
        }
        getOneData()
     }, [] )
