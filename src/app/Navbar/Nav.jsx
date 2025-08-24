@@ -6,8 +6,7 @@ import { IoMdLogIn } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
-import { getCurrentUser } from '../utils';
+
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
