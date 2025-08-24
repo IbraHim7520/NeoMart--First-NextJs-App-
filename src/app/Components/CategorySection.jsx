@@ -1,15 +1,15 @@
 "use client"
 import React from 'react';
-import vegCat from "../../../images/cat-1.png"
-import fastfoodCat from "../../../images/cat-13.png"
-import fruitCat from "../../../images/cat-2.png"
-import snacksCat from "../../../images/cat-3.png"
-import coffeeCat from "../../../images/cat-14.png"
+import vegCat from "/images/cat-1.png"
+import fastfoodCat from "/images/cat-13.png"
+import fruitCat from "/images/cat-2.png"
+import snacksCat from "/images/cat-3.png"
+import coffeeCat from "/images/cat-14.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import OnionImg from "../../../images/banner-onion.png"
-import milkImg from "../../../images/banner-milk.png"
-import VegiImg from "../../../images/banner-vegi.png"
+import OnionImg from "/images/banner-onion.png"
+import milkImg from "/images/banner-milk.png"
+import VegiImg from "/images/banner-vegi.png"
 import Image from 'next/image';
 const CategorySection = () => {
     const Categories = [

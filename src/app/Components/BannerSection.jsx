@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React from 'react';
-import Slider1 from "../../../images/slider-1.png"
+import Slider1 from "/images/slider-1.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import Link from 'next/link';

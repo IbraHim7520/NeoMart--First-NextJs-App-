@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import weblogo from "../../../images/WebLogo.png"
+import weblogo from "/WebLogo.png"
 import Image from 'next/image';
 const Weblogo = () => {
     return (
