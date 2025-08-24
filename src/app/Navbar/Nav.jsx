@@ -1,15 +1,18 @@
 "use client"
 import Link from 'next/link';
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import Weblogo from '../Components/Weblogo';
 import { IoMdLogIn } from "react-icons/io";
 import { CgLogIn } from "react-icons/cg";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseSharp } from "react-icons/io5";
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
+import { getCurrentUser } from '../utils';
 
 const Nav = () => {
     const [isOpen, setIsOpen] = useState(false);
+   useEffect( ()=>{
+   },[] )
     return (
         <nav className='p-3 shadow navbar w-full flex justify-between items-center px-3 md:px-6 lg:px-12 xl:px-16 '>
             <Link href={"/"}>
@@ -20,8 +23,9 @@ const Nav = () => {
                 <ul className='flex justify-center items-center gap-3   xl:text-lg font-semibold'>
                     <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Home</Link>
                     <Link className='hover:text-primary cursor-pointer. ' href={"/Products"}>Products</Link>
-                    <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
-                    <Link className='hover:text-primary cursor-pointer. ' href={"/Cart"}>Cart</Link>
+                    
+                      <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
+                    
                 </ul>
             </div>
 
@@ -45,8 +49,9 @@ const Nav = () => {
                     <ul className="flex font-semibold p-4 space-y-2 flex-col text-gray-700">
                         <Link className='hover:text-primary cursor-pointer. ' href={"/"}>Home</Link>
                         <Link className='hover:text-primary cursor-pointer. ' href={"/Products"}>Products</Link>
-                         <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
-                        <Link className='hover:text-primary cursor-pointer. ' href={"/Cart"}>Cart</Link>
+                         
+                        <Link className='hover:text-primary cursor-pointer. ' href={"/AddProducts"}>Add Products</Link>
+                         
                     <Link href={"/Login"} className='btn btn-sm px-5 btn-primary btn-outline'>Login <IoMdLogIn size={20} /></Link>
                     <Link href={"/Signup"} className='btn btn-sm px-5 btn-warning hover:text-white btn-outline'>Signup <CgLogIn size={20} /></Link>
                     </ul>

@@ -4,7 +4,8 @@ import axios from 'axios';
 import { useParams , useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
-const page = () => {
+
+const page = () => {  
     const {id} = useParams()
     const route = useRouter()
     const isLoggein = true // Convert this with my auth status
@@ -28,6 +29,7 @@ const page = () => {
         <div className=" w-full  mx-auto px-3 md:px-6 lg:px-12 xl:px-16 ">
             <p>
                 <span>Home</span> /
+                <span>Products</span> /
                 <span> Details</span> /
                 <span className='text-primary'> {oneProduct?.category}</span> 
             </p>
@@ -66,12 +68,12 @@ const page = () => {
                     <p className="text-base font-medium mt-6">Weight</p>
                     <div>
                         {
-                            oneProduct?.weight.length == 0 ?
+                            oneProduct?.weight?.length == 0 ?
                             "N/A"
                             :
                             <div className='flex w-full gap-3 mt-2'>
                                 {
-                                    oneProduct?.weight.map((ww,ind)=> <button key={ind} className='btn btn-sm '>{ww}</button>)
+                                    oneProduct?.weight?.map((ww,ind)=> <button key={ind} className='btn btn-sm '>{ww}</button>)
                                 }
                             </div>
                         }
@@ -99,14 +101,14 @@ const page = () => {
                 <h1 className='text-xl mt-8 font-semibold text-gray-700'>Reviews</h1>
                 <div className='w-full'>
                         {
-                            oneProduct?.reviews.length == 0 ? 
+                            oneProduct?.reviews?.length == 0 ? 
                             <div className='w-full py-8 '>
                                 <p>No Reviews Yet</p>
                             </div>
                             :
                             <div className='grid grid-cols-2 md:grid-cols-4 lg:flex justify-start items-center gap-5'>
                                 {
-                                    oneProduct?.reviews.map( (rev, inc)=>
+                                    oneProduct?.reviews?.map( (rev, inc)=>
                                         <ReviewCard key={inc} rev={rev}></ReviewCard>
                                     )
                                 }
