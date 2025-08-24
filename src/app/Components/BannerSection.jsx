@@ -1,13 +1,14 @@
 "use client"
 import Image from 'next/image';
 import React from 'react';
+import Slider1 from "../../../images/slider-1.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import Link from 'next/link';
 const BannerSection = () => {
     return (
         <div className='mx-auto w-full relative px-3 md:px-6 lg:px-12 xl:px-16'>
-            <Image src={"/images/slider-1.png"} alt='Slider iamge 1' priority className=' object-cover h-64 md:h-fit rounded-2xl'>
+            <Image src={Slider1} alt='Slider iamge 1' priority className=' object-cover h-64 md:h-fit rounded-2xl'>
             </Image>
            
            <div className="absolute space-y-1 md:space-y-3 inset-0 flex flex-col items-start justify-center xl:left-30 left-10 lg:left-25 md:left-20">

@@ -1,37 +1,46 @@
 "use client"
 import React from 'react';
+import vegCat from "../../../images/cat-1.png"
+import fastfoodCat from "../../../images/cat-13.png"
+import fruitCat from "../../../images/cat-2.png"
+import snacksCat from "../../../images/cat-3.png"
+import coffeeCat from "../../../images/cat-14.png"
 import { FaArrowRightLong } from "react-icons/fa6";
+
+import OnionImg from "../../../images/banner-onion.png"
+import milkImg from "../../../images/banner-milk.png"
+import VegiImg from "../../../images/banner-vegi.png"
 import Image from 'next/image';
 const CategorySection = () => {
     const Categories = [
         {
             id: 1,
-            Image: "/images/cat-1.png",
+            Image: vegCat,
             Title: "Vegitables",
             bg: "#F2FCE4"
         },
         {
             id: 2,
-            Image: "/images/cat-13.png",
+            Image: fastfoodCat,
             Title: "Foods",
             bg: "#FFF3FF"
         },
         {
             id: 3,
-            Image: "/images/cat-2.png",
+            Image: fruitCat,
             Title: "Fruits",
             bg: "#FEEFEA"
         },
         {
             id: 4,
-            Image: "/images/cat-3.png",
+            Image: snacksCat,
             Title: "Snacks",
             bg: "#F2FCE4"
         },
         {
             id: 5,
             Title: "Coffee",
-            Image: "/images/cat-14.png",
+            Image: coffeeCat,
             bg: "#FFF3FF"
         },
     ]
@@ -63,7 +72,7 @@ const CategorySection = () => {
             <div className='mt-5 grid grid-cols-1 w-full  justify-items-center md:flex justify-center items-center gap-4'>
                 
                 <div className='p-4 relative rounded-xl flex flex-col justify-center items-start w-full bg-[#F1EAD9] h-fit'>
-                    <Image src={"/images/banner-onion.png"} alt='Onion Banner' className='object-cover'/>
+                    <Image src={OnionImg} alt='Onion Banner' className='object-cover'/>
                     <div className='absolute space-y-3 w-2/4'>
                         <h1 className='text-2xl xs:text-lg 2xl:text-3xl font-bold text-gray-700 '>Everyday Fresh and Clean Our Products</h1>
                         <button className='btn btn-success text-white btn-sm text-xs' >
@@ -74,7 +83,7 @@ const CategorySection = () => {
                 </div>
 
                 <div className='p-4 relative rounded-xl flex flex-col justify-center items-start  w-full bg-[#F3E8E8] h-fit'>
-                    <Image src={"/images/banner-milk.png"} alt='Milk Banner' className='object-cover' />
+                    <Image src={milkImg} alt='Milk Banner' className='object-cover' />
                     <div className='absolute space-y-3 w-2/4'>
                         <h1 className='text-2xl 2xl:text-3xl font-bold text-gray-700 '>Make Your Breakfast Healthy and Easy</h1>
                         <button className='btn btn-success text-white btn-sm text-xs' >
@@ -85,7 +94,7 @@ const CategorySection = () => {
                 </div>
 
                  <div className='p-4 relative md:hidden  rounded-xl flex  lg:flex flex-col justify-center items-start  w-full bg-[#E9ECF4] h-fit'>
-                    <Image src={"/images/banner-vegi.png"} alt='Vegitable Banner' className='object-cover' />
+                    <Image src={VegiImg} alt='Vegitable Banner' className='object-cover' />
                    <div className='absolute space-y-3 w-2/4'>
                         <h1 className='text-2xl 2xl:text-3xl font-bold text-gray-700 '>The Best Organic Products Online</h1>
                         <button className='btn btn-success text-white btn-sm text-xs' >

@@ -4,7 +4,7 @@ import React from 'react';
 import { CreateUser } from '../utils';
 import toast, { Toaster } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
-const Page = () => {
+const page = () => {
     const router = useRouter()
     const createuser = (e) =>{
         e.preventDefault()
@@ -12,9 +12,11 @@ const Page = () => {
         const name = form.name.value;
         const email = form.email.value
         const pass = form.password.value
-        CreateUser(name , email , pass);
+    CreateUser(name , email , pass);
+     
         toast.success("Signup success")
         router.push("/")
+     
     }
     return (
         <div className='w-full h-screen bg-base-200 flex flex-col justify-center items-center'>
@@ -46,4 +48,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default page;
